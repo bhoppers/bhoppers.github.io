@@ -1,0 +1,30 @@
+#canvas {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index: 2;
+}
+#text {
+	position:absolute;
+	margin-top:500px;
+}
+#background {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index: 1;
+}
+#input {
+	position:relative;
+	top:500px;
+	height:30px;
+	z-index:2;
+}
+
+#button {
+	position:relative;
+	top:500px;
+	width:50px;
+	left:0px;
+	height:30px;
+}
