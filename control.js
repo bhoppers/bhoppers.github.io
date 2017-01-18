@@ -945,13 +945,16 @@ document.body.addEventListener("keydown", function(e){
 	}
 	
 });
+var selected = false;
 window.addEventListener("click", function(e) {
 	var x = e.pageX,
 		y = e.pageY;
 	for (var i = 0;i < items.length; i++) {
 		if (x > items[i].x && x < items[i].x + items[i].w && y > items[i].y && y < items[i].y + items[i].h) {
-			items[i].action();
-			
+			if (selected == false) {
+				items[i].action();
+				selected = true
+			}
 		}
 	
 	
