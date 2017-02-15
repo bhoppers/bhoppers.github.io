@@ -51,6 +51,8 @@ triple = new Image();
 triple.src ='https://ibin.co/34VRW4kueBQS.png'
 devarino = new Image();
 devarino.src =  'https://ibin.co/34jBqJMtx5mE.jpg'
+noah = new Image();
+noah.src = 'https://ibin.co/3CVPuRQEttha.jpg'
 function makePic(person) {
 
 	context.drawImage(person,0,0);
@@ -106,7 +108,9 @@ function checktext() {
 		devDrinking = true
 	}
 	
-	
+	if (inputText == "noah"){
+		makePic(noah);
+	}
 	
 	document.getElementById('input').value = '';
 }
