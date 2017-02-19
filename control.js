@@ -41,24 +41,7 @@ canvas.height = height;
 
 var background = document.getElementById('background');
 var context = background.getContext('2d');
-patel = new Image();
-patel.src = 'https://ibin.co/34Ugsw8DtfTm.jpg'
-modi = new Image();
-modi.src = 'https://ibin.co/34V488RF2ZCG.png'
-goopa = new Image();
-goopa.src = 'https://ibin.co/34V4kE3Vuj47.png'
-triple = new Image();
-triple.src ='https://ibin.co/34VRW4kueBQS.png'
-devarino = new Image();
-devarino.src =  'https://ibin.co/34jBqJMtx5mE.jpg'
-noah = new Image();
-noah.src = 'https://ibin.co/3CVPuRQEttha.jpg'
-function makePic(person) {
 
-	context.drawImage(person,0,0);
-
-	
-}
 
 
 background.width = width;
@@ -66,18 +49,10 @@ background.height = height;
 
 function checktext() {
 	inputText = document.getElementById('input').value
-	if (inputText == "triple indian wombo combo") {
-		makePic(triple);
-	}
-	if (inputText == "dev") {
-		makePic(patel);
-	}
-	if (inputText == 'rahul') {
-		makePic(modi);
-	}
-	if (inputText == 'pranav' || inputText == 'perp') {
-		makePic(goopa);
-	}
+
+
+
+
 	if (inputText == "you're mother was a murloc") {
 		player.velX = 0;
 		player.velY = 0;			
@@ -103,14 +78,7 @@ function checktext() {
 		context.fillStyle = gradient
 		context.fillRect(0,0,background.width,background.height);
 	}
-	
-	if (inputText == "you can't do that dev"){
-		devDrinking = true
-	}
-	
-	if (inputText == "noah"){
-		makePic(noah);
-	}
+
 	
 	document.getElementById('input').value = '';
 }
@@ -273,7 +241,7 @@ function countDown() {
 	
 }
 var keep = true
-var devDrinking = false
+
 function doubleUp() {
 
 	////////// 
@@ -591,9 +559,7 @@ function doubleUp() {
 	ctx.fillRect(player.x,player.y,player.width,player.height);
 	ctx.fillStyle = 'red';
 	ctx.fillRect(playerTwo.x,playerTwo.y,playerTwo.width,playerTwo.height);
-	if (devDrinking) {
-		ctx.drawImage(devarino,player.x,player.y-20);
-	}
+
 	if (player.x >= width-player.width) {
     player.x = width-player.width;
 	} else if (player.x <= 0) {
@@ -891,9 +857,7 @@ function update() {
 	}	
 	ctx.fillStyle = 'blue';
 	ctx.fillRect(player.x,player.y,player.width,player.height);
-	if (devDrinking) {
-		ctx.drawImage(devarino,player.x,player.y-20);
-	}
+
 	if (player.x >= width-player.width) {
     player.x = width-player.width;
 	} else if (player.x <= 0) {
