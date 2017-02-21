@@ -677,13 +677,16 @@ function doubleUp() {
 
 
 
-
+var asdfasdf = 0
 
 
 
 
 function update() {
-
+	if (asdfasdf = 0){
+		countUp();
+		asdfasdf += 1;
+	}
 	if (keys[39]) {
 		if (player.velX < player.speed) {
 			player.velX++;
@@ -716,7 +719,7 @@ function update() {
 	player.velX *= friction;
 	player.velY += gravity;
 	player.grounded = false;
-	countUp()
+
 	ctx.beginPath();
 	ctx.font="30px Courier";
 	ctx.fillStyle = 'black';
