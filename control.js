@@ -244,7 +244,7 @@ function countUp() {
 		timerup += 1;
 		ctx.font="30px Courier";
 		ctx.fillStyle = 'black';
-		ctx.fillText(timerup,width-100,20);
+		ctx.fillText(timerup/1000,width-100,20);
 		
 	}, 1000)
 }
