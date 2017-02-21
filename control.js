@@ -231,15 +231,24 @@ function countDown() {
 			doubleUp()
 		}
 	}, 1000)
-		
-	
-	
-	
-	
-	
-	
-	
 }
+var timerup = 0
+function countUp() {
+	
+	
+	ctx.font="30px Courier";
+	ctx.fillStyle = 'black';
+	ctx.fillText(timerup,width-100,20);
+	var timeMe = setInterval(function(){
+	
+		timerup += 1;
+		ctx.font="30px Courier";
+		ctx.fillStyle = 'black';
+		ctx.fillText(timerup,width-100,20);
+		
+	}, 1000)
+}
+
 var keep = true
 
 function doubleUp() {
@@ -707,7 +716,7 @@ function update() {
 	player.velX *= friction;
 	player.velY += gravity;
 	player.grounded = false;
-	
+	countUp()
 	ctx.beginPath();
 	ctx.font="30px Courier";
 	ctx.fillStyle = 'black';
