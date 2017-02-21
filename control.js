@@ -683,7 +683,7 @@ var asdfasdf = 0
 
 
 function update() {
-	if (asdfasdf = 0){
+	if (asdfasdf === 0){
 		countUp();
 		asdfasdf += 1;
 	}
