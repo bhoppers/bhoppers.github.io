@@ -238,13 +238,13 @@ function countUp() {
 	
 	context.font="30px Courier";
 	context.fillStyle = 'black';
-	context.fillText(timerup/1000,width-80,20);
+	context.fillText(timerup/100,width-120,20);
 	var timeMe = setInterval(function(){
 		context.clearRect(0,0,width,height);
 		timerup += 1;
 		context.font="30px Courier";
 		context.fillStyle = 'black';
-		context.fillText(timerup/1000,width-80,20);
+		context.fillText(timerup/100,width-120,20);
 		
 	}, 1)
 }
