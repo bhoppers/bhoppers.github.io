@@ -246,7 +246,7 @@ function countUp() {
 		context.fillStyle = 'black';
 		context.fillText(timerup/100,width-120,20);
 		
-	}, 1)
+	}, 2)
 }
 
 var keep = true
