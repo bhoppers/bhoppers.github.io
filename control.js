@@ -238,15 +238,15 @@ function countUp() {
 	
 	context.font="30px Courier";
 	context.fillStyle = 'black';
-	context.fillText(timerup,width-100,20);
+	context.fillText(timerup/1000,width-80,20);
 	var timeMe = setInterval(function(){
-	
+		context.clearRect(0,0,width,height);
 		timerup += 1;
 		context.font="30px Courier";
 		context.fillStyle = 'black';
-		context.fillText(timerup,width-100,20);
+		context.fillText(timerup/1000,width-80,20);
 		
-	}, 1000)
+	}, 1)
 }
 
 var keep = true
