@@ -131,7 +131,7 @@ ctx.font="20px Georgia";
 // level creator
 ///////////////////////////////////////////////////////////
 var boxes = []
-var finish = [boxes,[9700,10000,4700,4810,1,ltwo,'CONGRAULATION YOU WON SEE HOW YOU STACK UP BELOW']]
+var finish = [boxes,[9700,10000,4700,4810,1,ltwo,'CONGRATULATION YOU WON SEE HOW YOU STACK UP BELOW']]
 var leleven = [boxes,{x:width/3+330,y:20,width:30,height:450,nono:true},{x:width/3+330,y:20,width:170,height:30,nono:true},{x:width/3,y:20,width:30,height:450,nono:true},{x:width/3,y:470,width:500,height:30,nono:true},{x:width/6*5,y:240,width:180,height:30,nono:true},{x:width/2,y:240,width:30,height:30},{x:width/6,y:240,width:30,height:30},[970,1000,470,481,1,finish,'Level 11']]
 var lten = [boxes,{x:width/3,y:340,width:30,height:30},{x:2*width/3,y:200,width:30,height:300},{x:0,y:340,width:2*width/3,height:10, nonblocking:true},[970,1000,470,481,1,leleven,'Level 10']]
 var lnine = [boxes,{x:width/3*2,y:270,width:30,height:265,nono:true},{x:width/3,y:270,width:30,height:265,nono:true},{x:width/3*2,y:0,width:30,height:250},{x:width/3,y:0,width:30,height:250},[970,1000,470,481,1,lten,'Level 9']]
@@ -687,6 +687,9 @@ function update() {
 	if (asdfasdf === 0){
 		countUp();
 		asdfasdf += 1;
+	}
+	if (current_level === finish){
+		clearInterval(timeMe);
 	}
 	if (keys[39]) {
 		if (player.velX < player.speed) {
