@@ -884,7 +884,7 @@ function update() {
 	}
 		player.x = current_level[current_level.length-1][4]
 		
-	}ti
+	}
 	if (counter < -400) {
 		counter += 20;
 	}
