@@ -246,7 +246,9 @@ function countUp() {
 		context.font="30px Courier";
 		context.fillStyle = 'black';
 		context.fillText(timerup,width-120,20);
-		
+		if (current_level === finish){
+		clearInterval(timeMe);
+	}
 	}, 1000)
 }
 
@@ -688,9 +690,6 @@ function update() {
 		countUp();
 		asdfasdf += 1;
 	}
-	if (current_level === finish){
-		clearInterval(timeMe);
-	}
 	if (keys[39]) {
 		if (player.velX < player.speed) {
 			player.velX++;
@@ -885,7 +884,7 @@ function update() {
 	}
 		player.x = current_level[current_level.length-1][4]
 		
-	}
+	}ti
 	if (counter < -400) {
 		counter += 20;
 	}
