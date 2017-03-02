@@ -238,15 +238,15 @@ var timerup = 0
 function countUp() {
 	
 	
-	context.font="30px Courier";
-	context.fillStyle = 'black';
-	context.fillText(timerup,width-120,20);
+	ctx.font="30px Courier";
+	ctx.fillStyle = 'black';
+	ctx.fillText(timerup,width-120,20);
 	var timeMe = setInterval(function(){
-		context.clearRect(0,0,width,height);
+		ctx.clearRect(0,0,width,height);
 		timerup += 1;
-		context.font="30px Courier";
-		context.fillStyle = 'black';
-		context.fillText(timerup,width-120,20);
+		ctx.font="30px Courier";
+		ctx.fillStyle = 'black';
+		ctx.fillText(timerup,width-120,20);
 		if (current_level === finish){
 		clearInterval(timeMe);
 	}
