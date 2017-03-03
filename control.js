@@ -242,7 +242,7 @@ function countUp() {
 	ctx.fillStyle = 'black';
 	ctx.fillText(timerup,width-120,20);
 	var timeMe = setInterval(function(){
-		ctx.clearRect(0,0,width,height);
+		
 		timerup += 1;
 		ctx.font="30px Courier";
 		ctx.fillStyle = 'black';
